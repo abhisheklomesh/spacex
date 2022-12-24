@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const Pagination = ({
-  totalcount,
+  totalcount = 0,
   pageSize,
   onPageChange,
   currentPage = 1,
@@ -9,7 +9,6 @@ const Pagination = ({
   let pages = [];
   for (let i = 0; i < Math.ceil(totalcount / pageSize); i++) pages.push(i + 1);
   if (pages.length === 1) return null;
-  console.log("first", pages);
 
   const buttonClass = (pagenumber) => {
     const unSelected =
@@ -55,7 +54,7 @@ const Pagination = ({
 
 export default Pagination;
 Pagination.propTypes = {
-  totalcount: PropTypes.number.isRequired,
+  totalcount: PropTypes.number,
   pageSize: PropTypes.number.isRequired,
   onPageChange: PropTypes.func.isRequired,
 };

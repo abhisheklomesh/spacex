@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import History from "./Pages/Payloads";
+import History from "./Pages/History";
 import Navbar from "./components/Navbar";
 import Payloads from "./Pages/Payloads";
 import Home from "./components/Home";

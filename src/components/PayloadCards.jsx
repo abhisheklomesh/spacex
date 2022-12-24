@@ -12,7 +12,7 @@ const PayloadCards = ({ payload }) => {
   } = payload;
 
   return (
-    <article className="bg-neutral-800 p-5 articles">
+    <article className="bg-neutral-900 p-5 xl:min-w-[22rem] lg:min-w-[18rem] md:min-w-[20rem] sm:min-w-[29.5rem] min-w-[90vw]">
       <h2 className="text-white font-bold text-xl my-1">
         {payload_id}, <span className="opacity-75 text-lg">{payload_type}</span>
       </h2>
